@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/transparente">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/transparente"
+            android:foreground="@color/transparente"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/tipo_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/transparente"
+                android:elevation="12dp"
+                android:entries="@array/dispositivos" />
+
+            <EditText
+                android:id="@+id/cedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Cedula"
+                android:inputType="number"
+                android:textColorHint="#F8F7F7" />
+
+            <EditText
+                android:id="@+id/cantidad_equipos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Cantidad de Equipos"
+                android:inputType="number"
+                android:textColorHint="#F8F7F7" />
+
+            <EditText
+                android:id="@+id/fecha_prestamo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Fecha  Inicio"
+                android:inputType="date"
+                android:textColorHint="#F8F7F7" />
+
+            <EditText
+                android:id="@+id/fecha_devolucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Fecha Final"
+                android:inputType="date"
+                android:textColorHint="#F8F7F7" />
+
+
+            <EditText
+                android:id="@+id/hora_prestamo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Hora  Inicio"
+                android:inputType="time"
+                android:textColorHint="#F8F7F7" />
+
+
+            <EditText
+                android:id="@+id/hora_devolucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Hora Final"
+                android:inputType="time"
+                android:textColorHint="#F8F7F7" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparente"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prestar_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde"
+            android:text="Prestar"
+            android:textColor="#107F5E"
+            android:textColorHint="#020202" />
+
+        <Button
+            android:id="@+id/cancelar_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde"
+            android:text="Cancelar"
+            android:textColor="#107F5E"
+            android:textColorHint="#000000" />
+    </LinearLayout>
+</LinearLayout>
