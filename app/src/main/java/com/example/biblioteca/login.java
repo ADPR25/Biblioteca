@@ -2,9 +2,7 @@ package com.example.biblioteca;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -43,7 +41,7 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        iniciar = findViewById(R.id.Biniciar);
+        iniciar = findViewById(R.id.crear_e);
         usuario = findViewById(R.id.usuario);
         contrasena = findViewById(R.id.contrasena);
         Bcrear = findViewById(R.id.Bcrear);
@@ -55,7 +53,7 @@ public class login extends AppCompatActivity {
             public void onClick(View v) {
                 String usuarioTexto = usuario.getText().toString();
                 String contrasenaTexto = contrasena.getText().toString();
-                if (usuarioTexto.equals("root") && contrasenaTexto.equals("root")) {
+                if (usuarioTexto.equals("") && contrasenaTexto.equals("")) {
                     Intent cambio = new Intent(login.this, MainActivity.class);
                     cambio.putExtra("clave", u);
                     startActivity(cambio);
