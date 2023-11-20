@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,127 +10,39 @@
     android:background="@drawable/fondo"
     tools:context=".ui.gallery.GalleryFragment">
 
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="@color/transparente">
+        android:layout_height="708dp"
+        android:background="#0FFFFFFF"
+        android:backgroundTint="#4CAF50">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/crear_e2"
+            android:layout_width="119dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/verde"
+            android:fontFamily="sans-serif-black"
+            android:text="Buscar"
+            android:textColor="#107F5E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.195" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="186dp"
             android:layout_height="wrap_content"
-            android:divider="@color/transparente"
-            android:foreground="@color/transparente"
-            android:orientation="vertical">
-
-            <Spinner
-                android:id="@+id/tipo_e"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@color/transparente"
-                android:elevation="12dp"
-                android:entries="@array/dispositivos" />
-        </LinearLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:id="@+id/contenedor"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/selected2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TExto"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:src="@mipmap/ic_launcher" />
-
-            <EditText
-                android:id="@+id/serial"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:ems="10"
-                android:hint="Serial"
-                android:inputType="textPersonName"
-                android:textColorHint="#F8F7F7" />
-
-            <EditText
-                android:id="@+id/referencia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Referencia"
-                android:inputType="textPersonName"
-                android:textAlignment="textStart"
-                android:textColorHint="#FFFCFC" />
-
-            <EditText
-                android:id="@+id/codigo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:ems="10"
-                android:hint="Codigo"
-                android:inputType="textPersonName"
-                android:textColorHint="#F4F4F4" />
-
-            <Spinner
-                android:id="@+id/estado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:entries="@array/estado" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="50dp"
-                android:background="@color/transparente"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/verde"
-                    android:textColor="#107F5E"
-                    android:text="Guardar"
-                    android:textColorHint="#020202" />
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:backgroundTint="@color/verde"
-                    android:layout_weight="1"
-                    android:textColor="#107F5E"
-                    android:text="Borrar"
-                    android:textColorHint="#000000" />
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+            android:entries="@array/opciones"
+            app:layout_constraintBottom_toTopOf="@+id/crear_e2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.431"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.576" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

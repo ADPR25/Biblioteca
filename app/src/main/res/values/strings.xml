@@ -9,21 +9,7 @@
 
     <string name="menu_home">MENU</string>
     <string name="menu_gallery">PRESTAMOS EQUIPOS</string>
-    <string name="menu_slideshow">LIBROS</string>
-
-    <string-array name="dispositivos">
-        <item>Seleccione equipo</item>
-        <item>Videobeams</item>
-        <item>Portátil</item>
-        <item>cableado</item>
-    </string-array>
-
-    <string-array name="estado">
-        <item>Bueno</item>
-        <item>Malo</item>
-        <item>Estraviado</item>
-        <item>En reparación</item>
-    </string-array>
+    <string name="menu_slideshow">CREAR</string>
 
     <string-array name="opciones">
         <item>rol</item>
