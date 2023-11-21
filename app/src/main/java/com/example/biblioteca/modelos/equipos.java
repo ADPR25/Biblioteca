@@ -2,14 +2,28 @@ package com.example.biblioteca.modelos;
 
 public class equipos {
 
+    public int tipo;
+    public int estado;
     private int id_equipos;
+    private String serial;
+    private String descripcion;
+    private String codigo;
+    private String referencia;  // Add this field
 
-    public String getTipo_equipo() {
-        return tipo_equipo;
+    public int getId_equipos() {
+        return id_equipos;
     }
 
-    public void setTipo_equipo(String tipo_equipo) {
-        this.tipo_equipo = tipo_equipo;
+    public void setId_equipos(int id_equipos) {
+        this.id_equipos = id_equipos;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
 
     public String getSerial() {
@@ -36,25 +50,19 @@ public class equipos {
         this.codigo = codigo;
     }
 
-    public String getEstado() {
+    public int getEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(int estado) {
         this.estado = estado;
     }
 
-    private String tipo_equipo;
-    private String serial;
-    private String descripcion;
-    private String codigo;
-    private String estado;
-
-    public int getId_equipos() {
-        return id_equipos;
+    public String getReferencia() {
+        return referencia;
     }
 
-    public void setId_equipos(int id_equipos) {
-        this.id_equipos = id_equipos;
+    public void setReferencia(String referencia) {
+        this.referencia = referencia;
     }
 }

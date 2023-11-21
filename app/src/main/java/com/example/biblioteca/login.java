@@ -112,6 +112,7 @@ public class login extends AppCompatActivity {
                         nuevoUsuario.setNombre(nombrevalue);
                         nuevoUsuario.setApellidos(apellidovalue);
                         nuevoUsuario.setemail(emailvalue);
+
                         for (rol r : roles) {
                             if(r.getDescripcion().toLowerCase().equals(rolvalue.toLowerCase())){
                                 nuevoUsuario.setRol(r.getId());
@@ -146,8 +147,8 @@ public class login extends AppCompatActivity {
                         });
                     }
                 });
- 
- 
+
+
             }
         });
     }

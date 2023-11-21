@@ -1,15 +1,28 @@
 package com.example.biblioteca.modelos;
 
 public class prestamo {
-    private int id_prestamo;
+    private int id;
+
+    public int getId_prestamo() {
+        return id;
+    }
+
+    public void setId_prestamo(int id_prestamo) {
+        this.id = id;
+    }
+
+
+    private String tipo;
 
     public String getTipo_equipo() {
-        return tipo_equipo;
+        return tipo;
     }
 
     public void setTipo_equipo(String tipo_equipo) {
-        this.tipo_equipo = tipo_equipo;
+        this.tipo = tipo;
     }
+
+
 
     public String getCedula() {
         return cedula;
@@ -59,7 +72,7 @@ public class prestamo {
         this.hora_devolucion = hora_devolucion;
     }
 
-    private String tipo_equipo;
+
     private String cedula;
     private String cantidad;
     private String fecha_prestamo;
@@ -67,11 +80,5 @@ public class prestamo {
     private String fecha_devolucion;
     private String hora_devolucion;
 
-    public int getId_prestamo() {
-        return id_prestamo;
-    }
 
-    public void setId_prestamo(int id_prestamo) {
-        this.id_prestamo = id_prestamo;
-    }
 }

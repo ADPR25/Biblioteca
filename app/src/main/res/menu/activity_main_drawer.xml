@@ -11,6 +11,11 @@
             android:textColor="#FFFFFF"
             android:title="@string/menu_home" />
         <item
+            android:id="@+id/nav_prestamno"
+            android:icon="@drawable/libro"
+            android:textColor="#FFFFFF"
+            android:title="PRESTAMO" />
+        <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/iconpc"
             android:textColor="#FFFFFF"
