@@ -16,7 +16,7 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface UserAPI {
-    String API = "http://10.187.144.209:3000/";
+    String API = "http://10.187.144.47:3000/";
 
     @GET("usuario")
     Call<List<String>> getusuario();

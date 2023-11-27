@@ -1,11 +1,11 @@
 package com.example.biblioteca.modelos;
 
 public class rol {
-    public Number getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Number id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -17,7 +17,7 @@ public class rol {
         this.descripcion = descripcion;
     }
 
-    private Number id;
+    private int id;
 
     private String descripcion;
 }
